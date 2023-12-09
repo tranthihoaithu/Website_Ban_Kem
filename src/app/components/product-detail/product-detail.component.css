@@ -1,0 +1,50 @@
+.CHUNG3{
+    margin: 30px;
+    width: 100%;
+    height: 600px;
+    /* height: 100vh; */
+    background: white;
+}
+    .chung31{
+        
+        width: 90%;
+        background: white;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    /* 	body{
+            margin: 0px;
+            padding: 0px;
+        } */
+        /*#main-img{
+            float: left;
+        }*/
+
+        p img{
+            border: 1px solid black;
+            width: 100px;
+            height: 80px;
+        }
+        p img:hover{
+            border: 2px solid red;
+            cursor: pointer;
+        }
+        .addanh{
+            height: 90vh;
+            background: white;
+            float: left;
+            width: 40%;
+            padding-left: 10px;
+        }
+.information{
+    background: white;
+    width: 50%;
+    /* height: 120vh */;
+    height: 90vh;
+    float: left;
+    text-align:justify;
+    
+}
+.information-con{
+    padding-left: 30px;
+}

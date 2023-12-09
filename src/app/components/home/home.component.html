@@ -1,0 +1,28 @@
+
+<div class="view_banner">
+  <owl-carousel-o [options]="bannerOptions">
+      <ng-template carouselSlide *ngFor="let ban of banners">
+          <div class="slide">
+              <img src="{{ban.link}}">
+          </div>
+      </ng-template>
+      
+  </owl-carousel-o>
+</div>
+<h2 class="header_title"> SẢN PHẨM</h2>
+<div class="row">
+  
+<div class="col-md-3" *ngFor="let pro of products">
+  <div class="card text-left" >
+    <img routerLink="/chi-tiet/{{pro.id}}" class="card-img-top" src="{{pro.image}}" >
+    <div class="card-body">
+      <h4 routerLink="/chi-tiet/{{pro.id}}" class="card-title">{{pro.name}}</h4>
+      <p class="card-text">
+          <b>Giá: {{pro.price}}</b>
+      </p>
+    </div>
+    <a routerLink="/product">Mua Ngay</a>
+  </div>
+</div>
+
+

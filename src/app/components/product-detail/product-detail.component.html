@@ -1,0 +1,63 @@
+<div class="CHUNG3">
+        <div class="chung31">
+            <form method="POST" action="pages/main/themgiohang.php?idsanpham=<?php echo $row_chitiet['id_sanpham']?> ">
+            <div class="addanh">
+            
+                <div id="main-img">
+                    <img border="1px solid black" width="450px" id="img-main" src="{{product.image}}">
+                    
+                </div>
+                <div class="picter">
+                    <p>
+                        <img src="assets/image/tải xuống.jpg" width="120px" onclick="changeImage('one') " id="one">
+                        <img src="assets/image/Scoops-kinds-ice-cream.webp" width="120px" onclick="changeImage('two') " id="two">
+                        <img src="assets/image/Scoops-kinds-ice-cream.webp" width="120px" onclick="changeImage('three') " id="three">
+                        <img src="assets/image/images.jpg" width="120px" onclick="changeImage('four') " id="four">
+
+                    </p>
+                </div>
+                
+                <script type="text/javascript">
+                    
+                    function changeImage(id){
+                        let imgePath = document.getElementById(id).getAttribute('src');
+
+                        document.getElementById('img-main').setAttribute('src',imgePath);
+                    }
+
+
+                    // const btn = document.querySelector("button")
+
+                    btn.forEach(function(button,index){
+                    button.addEventListener("click",function(event){{
+                        var btnItem = event.targer
+                        var product=btnItem.parentElement
+                        console.log(btn)
+                    }})
+                        
+                })
+            
+		</script>
+
+	</div>
+		
+	
+<div class="information">
+	<div class="information-con">
+		
+		<h2>  {{product.name}}</h2>
+			<p>Han sử dụng: {{product.hsd}}</p><br>
+			<p>Thương Hiệu: <b>{{product.made}}</b> </p><br>
+			<p>Hướng dẫn sử dụng: <b> Ăn trực tiếp - Bảo quản ở nhiệt độ ≤ -18oC</b> </p><br>
+			<h4 class="price" style="color: red;">
+				Giá: {{product.price}} VNĐ
+			</h4>
+			 <p><input class="themgiohang" name="themgiohang" type="submit" value="Thêm vào giỏ"></p>
+		
+      
+			<br>
+			<h2>CHI TIẾT SẢN PHẨM</h2>
+            <hr>
+		
+    </div>
+</div>

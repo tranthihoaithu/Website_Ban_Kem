@@ -1,0 +1,84 @@
+.navbar{
+    background-color: antiquewhite;
+    
+}
+.navbar-brand{
+    color: black;
+}
+.container ul li a{
+    color: black;
+    
+} 
+.icon{
+    padding-left: 10px;
+}
+
+.menu-sub{
+    background: rgb(252, 205, 229);
+   
+}
+
+.menu-sub ul li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+} 
+.menu-sub ul li:hover {
+    background: white;
+}
+.menu-sub ul li:last-child{
+    border-right: none;
+}
+.menu-sub ul li:hover a{
+    color: pink;
+}
+.menu-sub ul li{
+    /*padding-bottom: 10px;
+    padding-top: 10px;*/
+    width: 150px;
+    /*display: inline-block;*/
+   list-style: none;
+   text-align: center;
+   
+}
+.container ul li:hover a{
+    color: rgb(207, 133, 145);
+}
+.menu-sub{
+   position: absolute;
+    display: none;
+}
+.container ul li:hover .menu-sub{
+    display: block;
+}
+
+
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgb(231, 133, 149);
+    background: pink;
+    float: left;
+
+}
+.nd1{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 30%;
+    height: 250px;
+    float: left;
+}
+.nd2{
+    margin-top: 20px;
+    width: 30%;
+    height: 250px;
+    float: left;
+}
+.nd3{
+    margin-top: 20px;
+    width: 30%;
+    height: 250px;
+    float: left;
+}

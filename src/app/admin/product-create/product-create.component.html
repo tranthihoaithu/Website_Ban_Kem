@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-md-4">
+        <form action="" method="POST" [formGroup]="productFormCreate" (ngSubmit)="onCreate()">
+            <legend>THÊM SẢN PHẨM</legend>
+        
+            <div class="form-group">
+                <label>name</label>
+                <input type="text" class="form-control" formControlName="name" placeholder="Input field">
+            </div>
+        
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" formControlName="price" placeholder="Input field">
+            </div>
+        
+            <div class="form-group">
+                <label>Ảnh Chính</label>
+                <input type="file" class="form-control" formControlName="image" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Ảnh Phụ</label>
+                <input type="file" class="form-control" formControlName="image1" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Ảnh Phụ</label>
+                <input type="file" class="form-control" formControlName="image2" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Ảnh Phụ</label>
+                <input type="file" class="form-control" formControlName="image3" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Ảnh Phụ</label>
+                <input type="file" class="form-control" formControlName="image4" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Hạn Sử Dụng</label>
+                <input type="text" class="form-control" formControlName="hsd" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Xuất Xứ</label>
+                <input type="text" class="form-control" formControlName="made" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Loại</label>
+                <input type="text" class="form-control" formControlName="type" placeholder="Input field">
+            </div>
+            <div class="form-group">
+                <label>Số lượng</label>
+                <input type="number" class="form-control" formControlName="amount" placeholder="Input field">
+            </div>
+        
+        
+        
+            <button type="submit" class="btn btn-prinary">Thêm</button>
+        </form>
+    </div>
+</div>

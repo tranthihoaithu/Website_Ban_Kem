@@ -1,0 +1,84 @@
+
+
+<nav class="navbar navbar-expand ">
+    <div class="container">
+     
+      <a class="navbar-brand" routerLink="/"><i class="fa-solid fa-house"></i>IceCream</a>
+      
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+            
+            <a class="nav-link" routerLink="/">Trang Chủ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Giới Thiệu</a>
+        </li>
+        <li class="nav-item dropdown" >
+            <div class="Menu">
+                <a class="nav-link dropdown-toggle" routerLink="/product" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản Phẩm</a>
+                <div class="menu-sub" *ngFor="let cate of category">
+                    <ul class="list-menu">
+                        <li>
+                            <a>{{cate.name}}</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </div>
+            
+           
+        </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" formControlName="name" (ngSubmit)="onSearch()">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a class="icon"><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="icon"><i class="fa-regular fa-heart"></i></a>
+    <a routerLink="/login" class="icon"><i  class="fa-regular fa-user"></i></a>
+    
+    
+    
+    
+
+    </div>
+   
+</nav> 
+
+
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="footer">
+    <div class="nd1">
+        <h2> ICE CREAM</h2>
+        <p> Vị ngon mát lạnh</p>
+        <h2>Liên Hệ</h2>
+        <ul>
+            <li><a>Địa Chỉ: Số 36 Nguyễn Tri Phương,Hà Đông, Hà Nội</a></li>
+            <li><a>Hotline: 0234567891</a></li>
+            <li><a>icecream@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="nd2">
+        <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+        <ul>
+            <li><a>Chính sách vận hành</a></li>
+            <li><a>Chính sách đổi trả sản phẩm</a></li>
+            <li><a> Chính sách đại lý</a></li>
+            <li><a>Giải quyết khiếu nại</a></li>
+            <li><a>Chính sách bảo mật</a></li>
+        </ul>
+    </div>
+    <div class="nd3">
+        <h2>GIỚI THIỆU</h2>
+        <ul>
+            <li><a>Giới thiệu công ty</a></li>
+            <li><a>Phân biệt mặt hàng chính hãng</a></li>
+            <li><a>Hệ thống đại lý</a></li>
+        </ul>
+    </div>
+</div>
+
+</footer>
